@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Movie Generator</title>
+  </head>
+  <body>
+    <h1>Random Movie Generator</h1>
+    <button onclick="chooseMovie()">Click me for a random movie!</button>
+    <script>
+      function chooseMovie() {
+        // List of movies
+        const movies = [
+          "Rocky",
+          "Miracle",
+          "Hoosiers",
+          "Bend it like Beckham",
+          "Friday Night Lights",
+          "Rudy",
+          "The Karate Kid",
+          "Pumping Iron",
+          "Chariots of Fire",
+          "Blue Crush",
+          "Million Dollar Baby",
+          "Warrior",
+          "Prefontaine",
+          "The Fighter",
+          "Creed",
+          "The Game Changers",
+          "Icarus",
+          "Rush",
+          "Pain is Gain",
+          "John wick"
+        ];
+
+        // Choose a random movie
+        const randomMovie = movies[Math.floor(Math.random() * movies.length)];
+
+        // Redirect to the movie page
+        window.location.href = `movies/${randomMovie}.html`;
+      }
+    </script>
+  </body>
+</html>
